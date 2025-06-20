@@ -4,7 +4,7 @@ import math
 
 class Rectangle():
     # Create the constructor "__init__" method
-
+    # This is initializing the rectangle class, saying every rectangle will have a width and height
     # YOUR CODE HERE
     def __init__(self, width, height):
         self.width = width

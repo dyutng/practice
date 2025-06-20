@@ -4,49 +4,52 @@ import math
 
 class Rectangle():
     # Create the constructor "__init__" method
-
+    # Set width and height
     # YOUR CODE HERE
     def __init__(self, width, height):
         self.width = width
         self.height = height
 
     # Create the "__str__" method
-
+    # Set the return value to a string that describes the rectangle
     # YOUR CODE HERE
     def __str__(self):
-        return f"Rectangle(width = {self.width}, height = {self.height})"
+        return f"Width = {self.width}, height = {self.height}"
 
     # Create the "area_calculator" method
-
+    # Calculates the area of the rectangle
     # YOUR CODE HERE
     def area_calculator(self):
-        return self.width * self.height
+        area = self.width * self.height
+        return area
 
     # Create the "__eq__" method
-    # 
-    # Returns a boolean value
-
+    # Returns a boolean value, true if self.width equals other.width and self.height equals other.height
     # YOUR CODE HERE
     def __eq__(self, other):
         if isinstance(other, Rectangle):
-            return self.width == other.width and self.height == other.height
-        return False
-    
+            if self.width == other.width and self.height == other.height:
+                return True
+            else:
+                return False
+        else:
+            return False
 
 def main():
-    r1 = Rectangle(10, 10)
     # call the __str__ method
-    print(r1)
+    r1 = Rectangle(10, 8)
+    r2 = Rectangle(11, 4)
+    r3 = Rectangle(5, 6)
+
     # call the area_calculator method
-    print("Area:", r1.area_calculator())
+    print(r1)
+    print(f"Area = {r1.area_calculator()}")
 
-
-    r2 = Rectangle(10, 15)
     print(r2)
-    print("Area:", r2.area_calculator())
+    print(f"Area = {r2.area_calculator()}")
+
     # call the __eq__ method
     print(r1 == r2)
-    print()
 
     # you can create additional rectangle objects to 
     # test your code or learn more about how the class behaves
