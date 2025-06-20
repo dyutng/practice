@@ -1,2 +1,2 @@
 # welcome!
-practicing python :3
+practicing
