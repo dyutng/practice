@@ -36,19 +36,25 @@ class Rectangle():
             return False
 
 def main():
+    # steps:
     # call the __str__ method
+    # call the area_calculator method
+    # call the __eq__ method
+    
+    # setting the rectangle dimensions
     r1 = Rectangle(10, 8)
     r2 = Rectangle(11, 4)
     r3 = Rectangle(5, 6)
 
-    # call the area_calculator method
+    # r1
     print(r1)
     print(f"Area = {r1.area_calculator()}")
 
+    # r2
     print(r2)
     print(f"Area = {r2.area_calculator()}")
 
-    # call the __eq__ method
+    # are r1 and r2 the same?
     print(r1 == r2)
 
     # you can create additional rectangle objects to 
